@@ -1,0 +1,6 @@
+{
+  "name": "Must-programming-club",
+  "tagline": "Solution for problem 10 project Eular questions",
+  "body": "Below is the solution for the proplem 10 project Eular in c programming\r\n\r\n#include<stdio.h>\r\n#include<math.h>\r\n\r\nconst unsigned int limit = 2000000;\r\nunsigned long;\r\nint main()\r\n{\r\nunsigned long sum = 0,flag = 0;\r\nint x,p,count;\r\nfor(p=1;p<=(limit+1);p++){\r\ncount=0;\r\n\r\n//for(x=1;x<=(0.5*p);x++){\r\nfor(x=1;x<=floor(sqrt(limit));x++){\r\nif(p%x==0)\r\n{\r\n    \r\n    count++;\r\n    break;\r\n\r\n}\r\n\r\n}\r\n\r\nif(count==1)\r\n{\r\n    sum=sum+p;\r\n    printf(\"%d\",p);\r\n  printf(\" +\");\r\n}\r\n\r\n}\r\nprintf(\"=%d\",sum);\r\nreturn 0;\r\n};\r\n\r\n\r\n\r\nThe Answer is 1451759935  ",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
